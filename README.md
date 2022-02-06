@@ -12,4 +12,13 @@ This linux kernel compiled on Linux Ubuntu 20.04, but will probably run on Debia
 
 To get the best Vulkan performance recommended for use with *ubuntu PPA repo https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers
 
-This is an **very** experimental kernel, use at your own risk.
+This is an **very** experimental kernel, use at your own **risk**.
+
+Install:
+1. Create a folder in a place convenient for you (for example: ~/kernel)
+2. Download latest .deb packages from [release](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases): linux-libc-dev, linux-headers and linux-image
+3. It is recommended to install non-free linux-firmware containing firmwares for amd video cards, etc...
+4. Run `sudo dpkg -i *.deb` in this directory.
+5. Reboot. Ok.  
+
+If something goes wrong, delete them.
