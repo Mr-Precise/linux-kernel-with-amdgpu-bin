@@ -16,7 +16,10 @@ and here: https://gitlab.freedesktop.org/agd5f/linux/-/branches/active
 
 This linux kernel compiled on Linux Ubuntu 20.04, but will probably run on Linux Mint, Debian and others debian-based.
 
-To get the best Vulkan performance recommended for use with *ubuntu PPA repo https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers
+To get the best Vulkan performance recommended for use with *ubuntu PPA repo:  
+https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers  
+or  
+https://launchpad.net/~kisak/+archive/ubuntu/steamvr
 
 This is an **very** experimental kernel, use at your own **risk**.
 
