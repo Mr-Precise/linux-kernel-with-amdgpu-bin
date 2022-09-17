@@ -1,4 +1,9 @@
 ## linux kernel for 64bit (amd64) with latest amdgpu drivers.
+
+- I cannot publish future updates due to that video card has broken (Random GPU artifacts) ☹  
+But I'll try to do something with these
+
+
 ![GitHub all releases](https://img.shields.io/github/downloads/Mr-Precise/linux-kernel-with-amdgpu-bin/total?color=%23477CE0&label=Total%20downloads%3A&style=flat-square)  
 This linux kernel also helps to run the latest AMD GPUs with the open source amdgpu kernel driver.  
 This is my attempt to get an outdated video card to work well with good results :)  
