@@ -1,6 +1,6 @@
 ## linux kernel for 64bit (amd64) with latest amdgpu drivers.
 
-- I cannot publish future updates due to that video card has broken (Random GPU artifacts) ☹  
+- I cannot publish future updates due to that video card has broken. ☹  
 But I'll try to do something with these
 
 
@@ -21,10 +21,13 @@ and here: https://gitlab.freedesktop.org/agd5f/linux/-/branches/active
 
 This linux kernel compiled on Linux Ubuntu 20.04, but will probably run on Linux Mint, Debian and others debian-based.
 
-To get the best Vulkan performance recommended for use with *ubuntu PPA repo:  
-https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers  
-or  
-https://launchpad.net/~kisak/+archive/ubuntu/steamvr
+To get the best Vulkan performance recommended for use with *ubuntu PPA repo: 
+ 
+*ubuntu jammy 22.04+:  
+`https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers`  
+or `https://launchpad.net/~kisak/+archive/ubuntu/steamvr`  
+*ubuntu focal 20.04+:  
+`https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa`
 
 This is an **very** experimental kernel, use at your own **risk**.
 
