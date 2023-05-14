@@ -1,16 +1,12 @@
 ## linux kernel for 64bit (amd64) with latest amdgpu drivers.
 
-- I cannot publish future updates due to that video card has broken. ☹  
-But I'll try to do something with these
-
-
 ![GitHub all releases](https://img.shields.io/github/downloads/Mr-Precise/linux-kernel-with-amdgpu-bin/total?color=%23477CE0&label=Total%20downloads%3A&style=flat-square)  
 This linux kernel also helps to run the latest AMD GPUs with the open source amdgpu kernel driver.  
 This is my attempt to get an outdated video card to work well with good results :)  
-Driver work checked on AMD Radeon HD 7750 (Cape Verde PRO, GCN 1.0), but will probably work on others.  
+Driver work checked on AMD Radeon HD 77XX (Cape Verde PRO, GCN 1.0), Tobago PRO (GCN 2.0), but will probably work on others.  
 
 
-I will also do experimental builds with the **clang** compiler (Currently: kernel 5.18+, Clang-14+).
+I will also do experimental builds with the **clang** compiler (Currently: kernel 6.4+, Clang-15+).
 
 
 Vulkan API - ok  
@@ -27,7 +23,8 @@ To get the best Vulkan performance recommended for use with *ubuntu PPA repo:
 `https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers`  
 or `https://launchpad.net/~kisak/+archive/ubuntu/steamvr`  
 *ubuntu focal 20.04+:  
-`https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa`
+`https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa`  
+or `https://launchpad.net/~kisak/+archive/ubuntu/turtle`
 
 This is an **very** experimental kernel, use at your own **risk**.
 
@@ -38,4 +35,4 @@ Install:
 4. Run `sudo dpkg -i *.deb` in this directory.
 5. Reboot. Ok.  
 
-If something goes wrong, delete them.
+If something goes wrong, delete/downgrade them.
