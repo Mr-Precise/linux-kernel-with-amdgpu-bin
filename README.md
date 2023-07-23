@@ -6,8 +6,7 @@ This is my attempt to get an outdated video card to work well with good results 
 Driver work checked on AMD Radeon HD 77XX (Cape Verde PRO, GCN 1.0), Tobago PRO (GCN 2.0), but will probably work on others.  
 
 
-I will also do experimental builds with the **clang** compiler (Currently: kernel 6.4+, Clang-15+).
-
+I will also do experimental builds with the **clang** compiler (Currently: kernel 6.4+, clang 15+).
 
 Vulkan API - ok  
 Hardware decode video - ok
@@ -19,12 +18,14 @@ This linux kernel compiled on Linux Ubuntu 20.04, but will probably run on Linux
 
 To get the best Vulkan performance recommended for use with *ubuntu PPA repo: 
  
-*ubuntu jammy 22.04+:  
-`https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers`  
-or `https://launchpad.net/~kisak/+archive/ubuntu/steamvr`  
-*ubuntu focal 20.04+:  
-`https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa`  
-or `https://launchpad.net/~kisak/+archive/ubuntu/turtle`
+### *ubuntu jammy 22.04+:  
+- [Oibaf - graphics-drivers PPA](https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers) `ppa:oibaf/graphics-drivers`  
+- [kisak - SteamVR Experimental Graphics PPA](https://launchpad.net/~kisak/+archive/ubuntu/steamvr) `ppa:kisak/steamvr`  
+### *ubuntu focal 20.04+:  
+- [kisak - kisak-mesa fresh PPA](https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa) `ppa:kisak/kisak-mesa`  
+- [kisak - kisak-mesa stable PPA](https://launchpad.net/~kisak/+archive/ubuntu/turtle) `ppa:kisak/turtle`  
+- [Ernst Sjöstrand - Mesa Unstable PPA](https://launchpad.net/~ernstp/+archive/ubuntu/mesaaco) `ppa:ernstp/mesaaco`  
+- [Ernst Sjöstrand - Mesa Almost Stable](https://launchpad.net/~ernstp/+archive/ubuntu/mesarc) `ppa:ernstp/mesarc`  
 
 This is an **very** experimental kernel, use at your own **risk**.
 
