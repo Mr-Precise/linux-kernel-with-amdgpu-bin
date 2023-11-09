@@ -32,6 +32,11 @@ To get the best Vulkan performance recommended for use with *ubuntu PPA repo:
 - [Ernst Sjöstrand - Mesa Unstable PPA](https://launchpad.net/~ernstp/+archive/ubuntu/mesaaco) `ppa:ernstp/mesaaco`  
 - [Ernst Sjöstrand - Mesa Almost Stable](https://launchpad.net/~ernstp/+archive/ubuntu/mesarc) `ppa:ernstp/mesarc`  
 
+### Linux firmware images:
+Install latest upstream firmwares for Linux kernel drivers to support new hardware  
+https://gitlab.com/kernel-firmware/linux-firmware  
+You can download the prepared .deb package here [releases/firmware](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases/tag/firmware)
+
 ### Warnings:
 This is an **very** experimental kernel, use at your own **risk**.  
 If something goes wrong, delete/downgrade them.  
