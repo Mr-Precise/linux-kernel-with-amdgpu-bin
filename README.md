@@ -35,7 +35,8 @@ To get the best Vulkan performance recommended for use with *ubuntu PPA repo:
 ### Linux firmware images:
 Install latest upstream firmwares for Linux kernel drivers to support new hardware  
 https://gitlab.com/kernel-firmware/linux-firmware  
-You can download the prepared .deb package here [releases/firmware](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases/tag/firmware)
+You can download the prepared .deb package here [releases/firmware](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases/tag/firmware)  
+Required 1 gigabyte of free disk space and additional space in `/boot`.
 
 ### Warnings:
 This is an **very** experimental kernel, use at your own **risk**.  
@@ -43,8 +44,8 @@ If something goes wrong, delete/downgrade them.
 Don't forget to remove old kernels, but keep at least 2 latest working ones just in case.
 
 ### How to install:
-1. Create a folder in a place convenient for you (for example: ~/kernel)
-2. Download latest .deb packages from [release](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases): linux-libc-dev, linux-headers and linux-image
-3. It is recommended to install non-free linux-firmware containing firmwares for amd video cards, etc...
+1. Create a folder in a place convenient for you (for example: `~/kernel`)
+2. Download latest .deb only packages from [release](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases): linux-libc-dev, linux-headers and linux-image
+3. Also recommended to install non-free linux-firmware containing firmwares for amd video cards, etc...
 4. Run `sudo dpkg -i *.deb` in this directory.
 5. Reboot. Ok.  
