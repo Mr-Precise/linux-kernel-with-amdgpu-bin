@@ -32,6 +32,12 @@ To get the best Vulkan performance recommended for use with *ubuntu PPA repo:
 - [Ernst Sjöstrand - Mesa Unstable PPA](https://launchpad.net/~ernstp/+archive/ubuntu/mesaaco) `ppa:ernstp/mesaaco`  
 - [Ernst Sjöstrand - Mesa Almost Stable](https://launchpad.net/~ernstp/+archive/ubuntu/mesarc) `ppa:ernstp/mesarc`  
 
+#### Vulkan Libs & SDK repo:
+Useful repository with Vulkan Libs & SDK for *ubuntu 20.04/22.04.  
+Contains latest libraries, headers, verify tools, glslang and SDK for develop apps.  
+Add/instal instructions here: 
+[vulkan.lunarg.com/doc/view/latest/linux/getting_started_ubuntu.html](https://vulkan.lunarg.com/doc/view/latest/linux/getting_started_ubuntu.html)
+
 ### Linux firmware images:
 Install latest upstream firmwares for Linux kernel drivers to support new hardware  
 https://gitlab.com/kernel-firmware/linux-firmware  
