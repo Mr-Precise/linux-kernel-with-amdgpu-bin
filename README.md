@@ -13,7 +13,8 @@ I will sometimes also do experimental builds with the **clang** compiler (Curren
 Vulkan - ok  
 Hardware decode video - ok  
 Most hardware - ok  
-Steam Proton/Wine DXVK performance - ok
+Steam Proton/Wine DXVK performance - ok  
+SteamVR/ALVR - ok
 
 ### What is it based on?
 The corresponding kernel source code tree can be found here:  
