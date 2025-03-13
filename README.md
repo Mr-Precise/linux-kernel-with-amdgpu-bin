@@ -1,13 +1,23 @@
 ## linux kernel for 64bit (amd64) with latest amdgpu drivers.
 
 ![GitHub all releases](https://img.shields.io/github/downloads/Mr-Precise/linux-kernel-with-amdgpu-bin/total?color=%23477CE0&label=Total%20downloads%3A&style=flat-square)  
-This linux kernel also helps to run the latest AMD GPUs with the open source amdgpu kernel driver. 
-### What for?
-This is my attempt to get an outdated video card to work well with good results :)  
-Driver work checked on AMD Radeon HD 77XX (Cape Verde PRO, GCN 1.0), Tobago PRO (GCN 2.0), but will probably work on others.  
+This linux kernel also helps to run the latest AMD GPUs with the open source amdgpu kernel driver.
 
-This linux kernel compiled on Linux Ubuntu 20.04, but will probably run on Linux Mint, Debian and others debian-based.  
-I will sometimes also do experimental builds with the **clang** compiler (Currently: kernel 6.6+, clang 17+).
+### What for?
+This is my attempt to get an outdated video card to work well with good results.  
+Driver work checked on AMD Radeon HD 77XX (Cape Verde PRO, GCN 1.0), Tobago PRO (GCN 2.0), but will probably work on others.
+
+This linux kernel compiled on Linux Ubuntu 22.04 (jammy), but will probably run on Linux Mint 21.3+ and other debian-based.
+
+### Features
+Currently preferred for **AMD** platforms, also Nvidia/Intel compatible.  
+Used custom experimental config with support for different hardware.  
+Includes a large count of drivers (big kernel).  
+Enabled ntfs (read/write support).  
+Enabled Android modules (binder).  
+Enabled some security settings.  
+And other useful (probably) settings.  
+It is also planned to create a repository.
 
 ### What works?
 Vulkan - ok  
@@ -23,11 +33,13 @@ and here:
 https://gitlab.freedesktop.org/agd5f/linux/-/branches/active
 
 #### PPAs:
-To get the best Vulkan performance recommended for use with *ubuntu PPA repo:
-#### *ubuntu jammy 22.04+:  
+To get the best Vulkan / OpenGL performance recommended for use with *ubuntu PPA repo:
+
+#### *ubuntu jammy 22.04+:
 - [Oibaf - graphics-drivers PPA](https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers) `ppa:oibaf/graphics-drivers`  
 - [kisak - SteamVR Experimental Graphics PPA](https://launchpad.net/~kisak/+archive/ubuntu/steamvr) `ppa:kisak/steamvr`  
-#### *ubuntu focal 20.04+:  
+#### *ubuntu focal 20.04+:
+(for kernel [6.11.0-rc6](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases/tag/v2024.8.25) and below)  
 - [kisak - kisak-mesa fresh PPA](https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa) `ppa:kisak/kisak-mesa`  
 - [kisak - kisak-mesa stable PPA](https://launchpad.net/~kisak/+archive/ubuntu/turtle) `ppa:kisak/turtle`  
 - [Ernst Sjöstrand - Mesa Unstable PPA](https://launchpad.net/~ernstp/+archive/ubuntu/mesaaco) `ppa:ernstp/mesaaco`  
@@ -50,11 +62,12 @@ Required 1 gigabyte of free disk space and additional space in `/boot`.
 ### Warnings:
 This is an **very** experimental kernel, use at your own **risk**.  
 If something goes wrong, delete/downgrade them.  
-Don't forget to remove old kernels, but keep at least 2 latest working ones just in case.
+Don't forget to remove old kernels, but keep at least 2 latest working ones just in case.  
+_Due to the configuration features of this kernel, the boot screen (log) may not be displayed. This does not affect functionality._
 
 ### How to install:
 1. Create a folder in a place convenient for you (for example: `~/kernel`)
-2. Download latest .deb only packages from [release](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases): linux-libc-dev, linux-headers and linux-image
+2. Download .deb only packages from [latest release](https://github.com/Mr-Precise/linux-kernel-with-amdgpu-bin/releases): linux-libc-dev, linux-headers and linux-image
 3. Also recommended to install non-free linux-firmware containing firmwares for amd video cards, etc...
 4. Run `sudo dpkg -i *.deb` in this directory.
-5. Reboot. Ok.  
+5. Reboot. Ok.
