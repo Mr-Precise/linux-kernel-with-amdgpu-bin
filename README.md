@@ -58,8 +58,36 @@ Contains latest libraries, headers, verify tools, glslang and SDK for develop ap
 Actual add/instal instructions here (Ubuntu Packages):  
 [vulkan.lunarg.com/sdk/home#linux](https://vulkan.lunarg.com/sdk/home#linux)  
 Vulkan 1.3.283.0 latest for old LTS *ubuntu 20.04:  
-[vulkan.lunarg.com/doc/sdk/1.3.283.0/linux/getting_started_ubuntu.html](https://vulkan.lunarg.com/doc/sdk/1.3.283.0/linux/getting_started_ubuntu.html)  
+[vulkan.lunarg.com/doc/sdk/1.3.283.0/linux/getting_started_ubuntu.html](https://vulkan.lunarg.com/doc/sdk/1.3.283.0/linux/getting_started_ubuntu.html)
 
+### Maximum FPS: Disabling CPU Mitigations:
+
+By default, the kernel includes security mitigations for CPU hardware vulnerabilities (Spectre, Meltdown, Retbleed, etc.). These patches introduce CPU overhead, increase input lag, and can cause micro-stuttering in heavy games and VR due to constant kernel-space context switching and buffer flushing.
+
+If you use your system **primarily for gaming, VR, and home entertainment**, you can completely disable these mitigations to unlock the raw physical speed of your processor.
+
+### Cons & Risks:
+* **Theoretical Vulnerability:** Your system becomes vulnerable to speculative side-channel attacks. This means malicious code executed locally on your PC could theoretically read data from the memory of other processes or the kernel.
+* **Web Browsing:** The risk is minimal if you avoid running untrusted binary files and keep your web browser up to date (modern browsers have their own built-in sandbox tab isolation).
+
+### How to Disable Mitigations via GRUB:
+
+1. Open a terminal and edit the GRUB configuration file with root privileges:  
+```bash
+sudo nano /etc/default/grub
+```
+
+2. Find the `GRUB_CMDLINE_LINUX_DEFAULT` line and add `mitigations=off` inside the quotes. For example:
+```text
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash mitigations=off"
+```
+3. Save the file (`Ctrl+O`, then `Enter`) and exit the editor (`Ctrl+X`).
+
+4. Update your GRUB configuration to apply the changes:
+```bash
+sudo update-grub
+```
+5. Reboot.
 
 ### Linux firmware images:
 Install latest upstream firmwares for Linux kernel drivers to support new hardware  
